@@ -3,469 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mai Văn Hưng — Full CV Chi Tiết | Quản Lý Kinh Doanh Khu Vực & Chuỗi Bán Lẻ</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
-    
+    <title>Mai Văn Hưng — CV Quản Lý Kinh Doanh Khu Vực (Bản Gốc PDF)</title>
     <style>
-        :root {
-            --bg-canvas: #f8fafc;
-            --bg-card: #ffffff;
-            --text-primary: #0f172a;
-            --text-secondary: #334155;
-            --text-muted: #64748b;
-            --accent-blue: #0284c7;
-            --accent-blue-light: #f0f9ff;
-            --accent-blue-tint: #bae6fd;
-            --accent-gold: #b45309;
-            --accent-gold-bg: #fef3c7;
-            --border-color: #e2e8f0;
-            --border-subtle: #f1f5f9;
-            --font-heading: 'Space Grotesk', -apple-system, sans-serif;
-            --font-sans: 'Inter', -apple-system, sans-serif;
-            --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
-            --shadow-md: 0 4px 14px -2px rgba(15, 23, 42, 0.07);
-            --radius-md: 10px;
-            --radius-lg: 14px;
-            --radius-xl: 20px;
-            --radius-full: 9999px;
-        }
-
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-
-        body {
-            font-family: var(--font-sans);
-            background-color: var(--bg-canvas);
-            color: var(--text-primary);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #1e293b;
+            display: flex;
+            flex-direction: column;
         }
-
-        /* Top Action Bar */
         .topbar {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: rgba(255, 255, 255, 0.94);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border-color);
-            padding: 14px 24px;
+            height: 54px;
+            background: #0f172a;
+            color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 0 20px;
+            border-bottom: 1px solid #334155;
+            flex-shrink: 0;
+            z-index: 10;
         }
-
-        .topbar-brand {
+        .topbar-left {
             display: flex;
             align-items: center;
             gap: 12px;
+            font-size: 0.95rem;
+            font-weight: 700;
         }
-
-        .brand-badge {
-            width: 38px;
-            height: 38px;
-            background: linear-gradient(135deg, #0284c7, #0369a1);
+        .badge {
+            background: #0284c7;
             color: #ffffff;
-            font-family: var(--font-heading);
-            font-weight: 800;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
+            font-size: 0.72rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
         }
-
-        .brand-info h1 {
-            font-size: 1.05rem;
-            font-weight: 800;
-            color: var(--text-primary);
-        }
-
-        .brand-info p {
-            font-size: 0.78rem;
-            color: var(--text-secondary);
-        }
-
         .topbar-actions {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-
         .btn {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            padding: 8px 16px;
-            border-radius: var(--radius-md);
-            font-size: 0.85rem;
+            padding: 7px 14px;
+            border-radius: 6px;
+            font-size: 0.84rem;
             font-weight: 600;
             text-decoration: none;
             cursor: pointer;
             transition: all 0.2s ease;
             border: none;
         }
-
-        .btn-outline {
-            background: #ffffff;
-            color: var(--text-secondary);
-            border: 1px solid var(--border-color);
-        }
-
-        .btn-outline:hover {
-            color: var(--accent-blue);
-            border-color: var(--accent-blue-tint);
-            background: var(--accent-blue-light);
-        }
-
-        .btn-primary {
-            background: var(--accent-blue);
+        .btn-back {
+            background: #334155;
             color: #ffffff;
         }
-
-        .btn-primary:hover {
+        .btn-back:hover {
+            background: #475569;
+        }
+        .btn-download {
+            background: #0284c7;
+            color: #ffffff;
+        }
+        .btn-download:hover {
             background: #0369a1;
             transform: translateY(-1px);
         }
-
-        /* Container */
-        .cv-container {
-            max-width: 960px;
-            margin: 32px auto;
-            padding: 0 20px 60px 20px;
+        .pdf-viewer-container {
+            flex: 1;
+            width: 100%;
+            height: calc(100vh - 54px);
+            background: #334155;
+            position: relative;
         }
-
-        /* Profile Card */
-        .cv-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-xl);
-            box-shadow: var(--shadow-md);
-            padding: 36px;
-            margin-bottom: 24px;
-        }
-
-        .profile-header {
-            display: flex;
-            gap: 28px;
-            align-items: center;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 24px;
-            margin-bottom: 24px;
-        }
-
-        .avatar-box {
-            width: 130px;
-            height: 155px;
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            border: 2px solid var(--border-color);
-            flex-shrink: 0;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .avatar-box img {
+        iframe, object, embed {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            border: none;
+            display: block;
         }
-
-        .profile-title-block h2 {
-            font-family: var(--font-heading);
-            font-size: 1.85rem;
-            font-weight: 800;
-            color: var(--text-primary);
-            margin-bottom: 4px;
-        }
-
-        .profile-role {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--accent-blue);
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-        }
-
-        .contact-pills {
+        .pdf-fallback {
             display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .contact-pill {
-            display: inline-flex;
+            flex-direction: column;
             align-items: center;
-            gap: 6px;
-            background: #f8fafc;
-            border: 1px solid var(--border-color);
-            padding: 5px 12px;
-            border-radius: var(--radius-full);
-            font-size: 0.82rem;
-            font-weight: 600;
-            color: var(--text-secondary);
+            justify-content: center;
+            height: 100%;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
         }
-
-        /* Section Headings */
-        .cv-section-title {
-            font-family: var(--font-heading);
-            font-size: 1.15rem;
-            font-weight: 800;
-            color: var(--text-primary);
-            display: flex;
-            align-items: center;
-            gap: 8px;
+        .pdf-fallback h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .pdf-fallback p {
+            color: #94a3b8;
             margin-bottom: 16px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid var(--border-subtle);
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-        }
-
-        .cv-section-title span.icon {
-            font-size: 1.15rem;
-        }
-
-        /* Career Objective */
-        .objective-box {
-            background: #f8fafc;
-            border: 1px solid var(--border-color);
-            border-left: 4px solid var(--accent-blue);
-            border-radius: var(--radius-md);
-            padding: 16px 20px;
-            font-size: 0.92rem;
-            color: var(--text-secondary);
-            line-height: 1.65;
-            margin-bottom: 12px;
-        }
-
-        .objective-tagline {
-            font-weight: 700;
-            color: var(--text-primary);
-            font-size: 0.95rem;
-            margin-top: 8px;
-        }
-
-        /* Experience Timeline */
-        .exp-item {
-            position: relative;
-            padding-left: 24px;
-            border-left: 2px solid var(--border-color);
-            margin-bottom: 30px;
-        }
-
-        .exp-item:last-child {
-            margin-bottom: 0;
-            border-left-color: transparent;
-        }
-
-        .exp-item::before {
-            content: '';
-            position: absolute;
-            left: -7px;
-            top: 4px;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #ffffff;
-            border: 2.5px solid var(--accent-blue);
-        }
-
-        .exp-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            gap: 6px;
-            margin-bottom: 2px;
-        }
-
-        .exp-role {
-            font-size: 1.08rem;
-            font-weight: 800;
-            color: var(--text-primary);
-        }
-
-        .exp-date {
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: var(--accent-blue);
-            background: var(--accent-blue-light);
-            padding: 3px 10px;
-            border-radius: var(--radius-full);
-            border: 1px solid var(--accent-blue-tint);
-        }
-
-        .exp-company {
-            font-size: 0.92rem;
-            font-weight: 700;
-            color: var(--text-muted);
-            margin-bottom: 12px;
-        }
-
-        .exp-bullets {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-
-        .exp-bullets li {
-            position: relative;
-            padding-left: 20px;
-            line-height: 1.55;
-        }
-
-        .exp-bullets li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--accent-blue);
-            font-weight: 800;
-        }
-
-        .award-badge-box {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--accent-gold-bg);
-            border: 1px solid #fde68a;
-            border-radius: var(--radius-md);
-            padding: 10px 14px;
-            margin-top: 10px;
-            font-size: 0.88rem;
-            font-weight: 700;
-            color: var(--accent-gold);
-        }
-
-        /* Skills Grid */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-        }
-
-        .skill-box {
-            background: #f8fafc;
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            padding: 12px 16px;
-        }
-
-        .skill-box-title {
-            font-size: 0.88rem;
-            font-weight: 800;
-            color: var(--text-primary);
-            margin-bottom: 2px;
-        }
-
-        .skill-box-desc {
-            font-size: 0.82rem;
-            color: var(--text-secondary);
-            line-height: 1.45;
-        }
-
-        /* Certifications List */
-        .cert-list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .cert-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 10px 14px;
-            background: #f8fafc;
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-md);
-            font-size: 0.88rem;
-        }
-
-        .cert-year-tag {
-            font-size: 0.76rem;
-            font-weight: 800;
-            color: var(--accent-blue);
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            padding: 2px 8px;
-            border-radius: var(--radius-full);
-            flex-shrink: 0;
-        }
-
-        .cert-name-text {
-            font-weight: 700;
-            color: var(--text-primary);
-        }
-
-        .cert-issuer-text {
-            color: var(--text-secondary);
-            font-size: 0.82rem;
-        }
-
-        /* Hobbies List */
-        .hobbies-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 8px;
-            font-size: 0.88rem;
-            color: var(--text-secondary);
-        }
-
-        .hobby-item {
-            display: flex;
-            align-items: baseline;
-            gap: 8px;
-            padding: 8px 12px;
-            background: #f8fafc;
-            border-radius: var(--radius-md);
-            border: 1px solid var(--border-color);
-        }
-
-        /* Print Styles */
-        @media print {
-            .topbar {
-                display: none !important;
-            }
-            body {
-                background: #ffffff !important;
-            }
-            .cv-container {
-                max-width: 100% !important;
-                margin: 0 !important;
-                padding: 0 !important;
-            }
-            .cv-card {
-                box-shadow: none !important;
-                border: 1px solid #cbd5e1 !important;
-                margin-bottom: 16px !important;
-                padding: 20px !important;
-                break-inside: avoid;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .profile-header {
-                flex-direction: column;
-                text-align: center;
-            }
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-            .contact-pills {
-                justify-content: center;
-            }
+            max-width: 500px;
         }
     </style>
 </head>
@@ -473,223 +118,36 @@
 
     <!-- TOPBAR -->
     <header class="topbar">
-        <div class="topbar-brand">
-            <div class="brand-badge">MH</div>
-            <div class="brand-info">
-                <h1>MAI VĂN HƯNG</h1>
-                <p>Full Curriculum Vitae (Theo Hồ Sơ Gốc)</p>
-            </div>
+        <div class="topbar-left">
+            <span class="badge">Bản Gốc PDF</span>
+            <span>MAI VĂN HƯNG — QUẢN LÝ KINH DOANH KHU VỰC</span>
         </div>
-
         <div class="topbar-actions">
-            <a href="index.html" class="btn btn-outline" title="Quay lại Portfolio">
+            <a href="index.html" class="btn btn-back">
                 <span>←</span>
                 <span>Quay Lại Portfolio</span>
             </a>
-            <a href="assets/images/Quản Lý Khu Vực_Mai Văn Hưng.pdf" target="_blank" class="btn btn-primary" title="Tải file PDF gốc">
+            <a href="assets/Quan_Ly_Khu_Vuc_Mai_Van_Hung.pdf" target="_blank" download="Quan_Ly_Khu_Vuc_Mai_Van_Hung.pdf" class="btn btn-download">
                 <span>⬇</span>
                 <span>Tải File PDF Gốc</span>
             </a>
         </div>
     </header>
 
-    <!-- MAIN CV CONTENT -->
-    <div class="cv-container">
-        
-        <!-- 1. PROFILE HEADER CARD -->
-        <div class="cv-card">
-            <div class="profile-header">
-                <div class="avatar-box">
-                    <img src="assets/images/profile.jpg" alt="Mai Văn Hưng Avatar">
+    <!-- NATIVE FULLSCREEN PDF VIEWER -->
+    <main class="pdf-viewer-container">
+        <object data="assets/Quan_Ly_Khu_Vuc_Mai_Van_Hung.pdf" type="application/pdf" width="100%" height="100%">
+            <iframe src="assets/Quan_Ly_Khu_Vuc_Mai_Van_Hung.pdf" type="application/pdf">
+                <div class="pdf-fallback">
+                    <h3>📄 Hồ Sơ CV Gốc — Mai Văn Hưng</h3>
+                    <p>Trình duyệt của bạn đang bật chế độ bảo mật hoặc không hỗ trợ đọc trực tiếp trong khung.</p>
+                    <a href="assets/Quan_Ly_Khu_Vuc_Mai_Van_Hung.pdf" target="_blank" class="btn btn-download">
+                        <span>↗ Mở Trực Tiếp Trên Tab Mới</span>
+                    </a>
                 </div>
-                <div class="profile-title-block">
-                    <h2>MAI VĂN HƯNG</h2>
-                    <div class="profile-role">QUẢN LÝ KINH DOANH KHU VỰC</div>
-                    <div class="contact-pills">
-                        <span class="contact-pill">📞 0987 918 119</span>
-                        <span class="contact-pill">✉️ maihung89@gmail.com</span>
-                        <span class="contact-pill">🎂 29/09/1989</span>
-                        <span class="contact-pill">📍 683 Nguyễn Khoái, Lĩnh Nam, Hoàng Mai, Hà Nội</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Career Objective -->
-            <h3 class="cv-section-title"><span class="icon">🎯</span> MỤC TIÊU NGHỀ NGHIỆP</h3>
-            <div class="objective-box">
-                Với hơn <strong>13+ năm kinh nghiệm</strong> quản lý và giám sát vận hành chuỗi bán lẻ quy mô lớn, tôi mong muốn ứng dụng năng lực thiết lập quy chuẩn hoạt động, kiểm tra và nâng cao chất lượng dịch vụ showroom, tối ưu hóa trưng bày (Visual Merchandising) cùng kỹ năng ứng dụng AI/Automation vào báo cáo phân tích dữ liệu nhằm thúc đẩy hiệu quả vận hành.
-                <div class="objective-tagline">📌 13+ năm kinh nghiệm trong quản lý chuỗi bán lẻ – Dẫn dắt đội ngũ, tối ưu vận hành & tăng trưởng doanh thu.</div>
-            </div>
-        </div>
-
-        <!-- 2. WORK EXPERIENCE CARD -->
-        <div class="cv-card">
-            <h3 class="cv-section-title"><span class="icon">💼</span> KINH NGHIỆM LÀM VIỆC CHI TIẾT</h3>
-
-            <!-- 5S Fashion -->
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span class="exp-role">Quản Lý Kinh Doanh Khu Vực</span>
-                    <span class="exp-date">09/2023 – 02/2025</span>
-                </div>
-                <div class="exp-company">Công ty Cổ Phần 5S Fashion – Chuỗi Thời trang Nam (140+ Showroom)</div>
-                <ul class="exp-bullets">
-                    <li>Quản lý <strong>17 cửa hàng bán lẻ</strong>, đảm bảo doanh thu tăng trưởng <strong>~10%/năm</strong>.</li>
-                    <li>Xây dựng và chuẩn hóa quy trình vận hành tiêu chuẩn (SOP) cho 17 cửa hàng bán lẻ. Thiết lập hệ thống checklist kiểm tra chất lượng hoạt động và trực tiếp thực hiện Store Audit định kỳ hàng tháng, đảm bảo tỷ lệ tuân thủ quy trình đạt trung bình <strong>>95%</strong> toàn hệ thống.</li>
-                    <li>Đào tạo & phát triển <strong>>50 nhân sự</strong> bán hàng, nâng cao hiệu suất làm việc và kỹ năng tư vấn.</li>
-                    <li>Giám sát và tối ưu hóa quy chuẩn trưng bày Visual Merchandising (VM) tại điểm bán lẻ, duy trì tính đồng nhất của nhận diện thương hiệu.</li>
-                    <li>Trực tiếp setup hình ảnh, quầy kệ, trưng bày sản phẩm và chuẩn bị hàng hóa cho <strong>8 cửa hàng mới khai trương</strong> đạt tiêu chuẩn thiết kế trước ngày mở bán.</li>
-                    <li>Lập báo cáo chất lượng vận hành định kỳ, tổng hợp lỗi hệ thống và đề xuất tối ưu hóa quy trình.</li>
-                </ul>
-            </div>
-
-            <!-- FPT Long Chau -->
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span class="exp-role">Giám Đốc Kinh Doanh Khu Vực</span>
-                    <span class="exp-date">04/2022 – 08/2023</span>
-                </div>
-                <div class="exp-company">Công ty Cổ Phần Dược Phẩm FPT Long Châu – Chuỗi Bán lẻ Dược phẩm (~3.000 Cửa Hàng Toàn Quốc)</div>
-                <ul class="exp-bullets">
-                    <li>Đạt <strong>95% – 110% KPI</strong> doanh số mỗi tháng.</li>
-                    <li>Thực hiện kiểm tra định kỳ tiêu chuẩn vận hành và trưng bày sản phẩm tại các nhà thuốc khu vực phụ trách, thiết lập và theo dõi lộ trình khắc phục lỗi vận hành tại điểm bán để nâng cao trải nghiệm khách hàng.</li>
-                    <li>Tổng hợp dữ liệu kiểm tra định kỳ hàng tháng, xuất báo cáo phân tích chất lượng vận hành khu vực nhằm cung cấp thông tin thực địa hỗ trợ Ban Lãnh đạo tối ưu hóa tiêu chuẩn quản lý chuỗi.</li>
-                    <li>Xây dựng kế hoạch marketing địa phương, giúp tăng lưu lượng khách hàng.</li>
-                    <li>Đào tạo tại chỗ về tiêu chuẩn vận hành. Setup hình ảnh, quầy kệ, hàng hóa cho các cửa hàng mới mở đúng layout chuẩn.</li>
-                </ul>
-                <div class="award-badge-box">
-                    <span>🏆</span>
-                    <span>Giám Đốc Kinh Doanh Khu Vực Xuất Sắc – Đạt KPI cao nhất toàn hệ thống (Top 1 Miền Bắc) vào Tháng 12/2022 & Tháng 01/2023, dẫn đầu doanh thu miền.</span>
-                </div>
-            </div>
-
-            <!-- 30Shine -->
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span class="exp-role">Quản Lý Khu Vực & Phát Triển Hệ Thống</span>
-                    <span class="exp-date">05/2015 – 03/2022</span>
-                </div>
-                <div class="exp-company">Công ty Cổ Phần Thương Mại Dịch Vụ 30Shine – Chuỗi Cắt Tóc Nam (100+ Salon Toàn Quốc)</div>
-                <ul class="exp-bullets">
-                    <li>Tham gia thiết lập tiêu chuẩn quản lý dịch vụ chuỗi và giám sát kiểm tra định kỳ tình hình thực hiện tại <strong>10+ cửa hàng phụ trách</strong>, đảm bảo tính đồng bộ và chất lượng dịch vụ.</li>
-                    <li>Trực tiếp tham gia setup hình ảnh thương hiệu và chuẩn bị vận hành trong chiến dịch mở rộng hệ thống <strong>30+ cửa hàng mới</strong>.</li>
-                    <li>Xây dựng chương trình đào tạo nghiệp vụ dịch vụ khách hàng và trực tiếp huấn luyện nhân sự mới dựa trên các lỗi thực tế phát hiện qua kiểm tra định kỳ.</li>
-                    <li>Triển khai kênh chăm sóc khách hàng giúp tăng tỷ lệ khách quay lại sau 21–30 ngày đạt <strong>33%</strong>.</li>
-                </ul>
-                <div class="award-badge-box">
-                    <span>🏆</span>
-                    <span>Đạt giải thưởng "Người Dẫn Lối" 3 năm liên tiếp (2017 – 2020) & Xây dựng văn hóa phục vụ xuất sắc.</span>
-                </div>
-            </div>
-
-            <!-- Linh Trung Tin -->
-            <div class="exp-item">
-                <div class="exp-header">
-                    <span class="exp-role">Quản Lý Cửa Hàng</span>
-                    <span class="exp-date">09/2010 – 04/2015</span>
-                </div>
-                <div class="exp-company">Công ty CP Linh Trung Tín (Chuỗi Smartphone Hkphone)</div>
-                <ul class="exp-bullets">
-                    <li>Quản lý & điều phối hoạt động kinh doanh tại cửa hàng, đảm bảo doanh thu tăng trưởng ổn định.</li>
-                    <li>Tư vấn & hỗ trợ khách hàng, giúp tăng tỷ lệ khách quay lại mua hàng.</li>
-                    <li>Quản lý & đào tạo đội ngũ <strong>10+ nhân viên</strong>, tối ưu hiệu suất làm việc & dịch vụ khách hàng.</li>
-                    <li>Kiểm soát hàng tồn kho & trưng bày sản phẩm, giúp tăng tỷ lệ bán chéo (cross-selling).</li>
-                    <li>Báo cáo doanh thu & phân tích số liệu kinh doanh hàng ngày, hỗ trợ Ban Lãnh đạo đưa ra chiến lược tối ưu.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- 3. SKILLS & EDUCATION CARD -->
-        <div class="cv-card">
-            <h3 class="cv-section-title"><span class="icon">🛠️</span> CÁC KỸ NĂNG NỔI BẬT</h3>
-            <div class="skills-grid">
-                <div class="skill-box">
-                    <div class="skill-box-title">👑 Kỹ Năng Lãnh Đạo</div>
-                    <div class="skill-box-desc">Dẫn dắt và truyền cảm hứng cho đội ngũ đạt mục tiêu kinh doanh.</div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-box-title">🏬 Phát Triển Thị Trường</div>
-                    <div class="skill-box-desc">Mở rộng điểm bán mới, tăng trưởng lưu lượng khách hàng.</div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-box-title">📊 Kỹ Năng Lập Kế Hoạch</div>
-                    <div class="skill-box-desc">Xây dựng và thực hiện kế hoạch kinh doanh chi tiết.</div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-box-title">📈 Phân Tích Dữ Liệu & KPI</div>
-                    <div class="skill-box-desc">Đưa ra chiến lược kinh doanh và vận hành dựa trên số liệu.</div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-box-title">🎓 Kỹ Năng Đào Tạo</div>
-                    <div class="skill-box-desc">Phát triển chương trình đào tạo hiệu quả cho đội ngũ nhân viên.</div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-box-title">🏪 Quản Lý Chuỗi Bán Lẻ</div>
-                    <div class="skill-box-desc">Kiểm soát vận hành & doanh số hệ thống đa điểm.</div>
-                </div>
-                <div class="skill-box" style="grid-column: 1 / -1;">
-                    <div class="skill-box-title">⚡ Tối Ưu Vận Hành & AI/Automation</div>
-                    <div class="skill-box-desc">Tối ưu hóa quy trình, quy định, số hóa SOP và tự động hóa báo cáo phân tích dữ liệu thực địa.</div>
-                </div>
-            </div>
-
-            <h3 class="cv-section-title" style="margin-top: 28px;"><span class="icon">📜</span> BẰNG CẤP & CHỨNG CHỈ ĐÀO TẠO</h3>
-            <ul class="cert-list">
-                <li class="cert-item">
-                    <span class="cert-year-tag">2025</span>
-                    <div>
-                        <span class="cert-name-text">Google Introduction to AI & AI Agent Doanh Nghiệp</span>
-                        <div class="cert-issuer-text">Google (Nền tảng AI) • Tự Động Hóa Thực Chiến</div>
-                    </div>
-                </li>
-                <li class="cert-item">
-                    <span class="cert-year-tag">2024 – 2025</span>
-                    <div>
-                        <span class="cert-name-text">Chứng Chỉ "AI Prompt & Chatbot Mastery"</span>
-                        <div class="cert-issuer-text">Ứng dụng AI trong tối ưu vận hành, content MKT, kịch bản CSKH...</div>
-                    </div>
-                </li>
-                <li class="cert-item">
-                    <span class="cert-year-tag">2020</span>
-                    <div>
-                        <span class="cert-name-text">Đào Tạo Quản Lý Cấp Trung</span>
-                        <div class="cert-issuer-text">Công ty Cổ phần Học viện Agile</div>
-                    </div>
-                </li>
-                <li class="cert-item">
-                    <span class="cert-year-tag">2019</span>
-                    <div>
-                        <span class="cert-name-text">Nâng Tầm Dịch Vụ Khách Hàng (Up Your Service)</span>
-                        <div class="cert-issuer-text">Công Ty Nâng Tầm Dịch Vụ (PLC)</div>
-                    </div>
-                </li>
-                <li class="cert-item">
-                    <span class="cert-year-tag">2017 – 2020</span>
-                    <div>
-                        <span class="cert-name-text">Đào Tạo Quản Lý Cấp Trung</span>
-                        <div class="cert-issuer-text">Công Ty CP Đầu Tư Việt Trí Integrity (VTI)</div>
-                    </div>
-                </li>
-                <li class="cert-item">
-                    <span class="cert-year-tag">2018</span>
-                    <div>
-                        <span class="cert-name-text">Đào Tạo Sale & Kỹ Năng Bán Hàng</span>
-                        <div class="cert-issuer-text">Công ty TNHH Tư vấn Quản lý và Đào tạo Nhân Việt</div>
-                    </div>
-                </li>
-            </ul>
-
-            <h3 class="cv-section-title" style="margin-top: 28px;"><span class="icon">🎯</span> SỞ THÍCH & PHÁT TRIỂN BẢN THÂN</h3>
-            <div class="hobbies-grid">
-                <div class="hobby-item"><span>📚</span> <span><strong>Ham học hỏi & phát triển bản thân:</strong> Đọc sách về kinh doanh, quản lý, AI & tự động hóa (AI Agent) để ứng dụng trong công việc.</span></div>
-                <div class="hobby-item"><span>🤝</span> <span><strong>Kết nối & phát triển đội ngũ:</strong> Tham gia các hội nhóm quản lý kinh doanh & bán lẻ, chia sẻ kinh nghiệm và học hỏi từ các chuyên gia.</span></div>
-                <div class="hobby-item"><span>📊</span> <span><strong>Phân tích dữ liệu & tối ưu vận hành:</strong> Tìm hiểu về quản lý chuỗi bán lẻ, chiến lược tăng trưởng & tối ưu doanh số.</span></div>
-                <div class="hobby-item"><span>⚽</span> <span><strong>Thể thao & rèn luyện sức khỏe:</strong> Chạy bộ, đạp xe, chơi bóng đá để nâng cao thể lực & duy trì năng lượng làm việc.</span></div>
-                <div class="hobby-item"><span>✈️</span> <span><strong>Du lịch & khám phá thị trường:</strong> Du lịch kết hợp khảo sát & phân tích thị trường bán lẻ tại các khu vực mới.</span></div>
-            </div>
-        </div>
-
-    </div>
+            </iframe>
+        </object>
+    </main>
 
 </body>
 </html>
