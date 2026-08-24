@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Mai Văn Hưng - Quản Lý Kinh Doanh Khu Vực (PDF Gốc)</title>
+    <meta name="description" content="Bản CV gốc của Mai Văn Hưng - Quản Lý Kinh Doanh Khu Vực / Senior Retail Operations Manager.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+
+        /* TOP TOOLBAR */
+        .cv-topbar {
+            height: 56px;
+            background: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            z-index: 10;
+            position: relative;
+        }
+
+        .topbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .topbar-badge {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            color: #2563eb;
+            font-size: 0.72rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .topbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .btn-back {
+            background: #f1f5f9;
+            color: #0f172a;
+            border-color: #cbd5e1;
+        }
+
+        .btn-back:hover {
+            background: #e2e8f0;
+            color: #2563eb;
+        }
+
+        .btn-open {
+            background: #eff6ff;
+            color: #2563eb;
+            border-color: #bfdbfe;
+        }
+
+        .btn-open:hover {
+            background: #dbeafe;
+        }
+
+        .btn-download {
+            background: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-download:hover {
+            background: #1d4ed8;
+        }
+
+        /* PDF VIEWER CONTAINER */
+        .pdf-container {
+            width: 100%;
+            height: calc(100vh - 56px);
+            background: #525659;
+            position: relative;
+        }
+
+        .pdf-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .topbar-brand span.title-text {
+                display: none;
+            }
+            .btn-action span.btn-label {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- TOP CONTROL TOOLBAR -->
+    <header class="cv-topbar">
+        <div class="topbar-brand">
+            <span>📄</span>
+            <span class="title-text">MAI VĂN HƯNG — QUẢN LÝ KHU VỰC</span>
+            <span class="topbar-badge">PDF GỐC</span>
+        </div>
+
+        <div class="topbar-actions">
+            <a href="index.html" class="btn-action btn-back" title="Quay lại Web Portfolio">
+                <span>←</span>
+                <span class="btn-label">Quay Lại Portfolio</span>
+            </a>
+            <a href="assets/Quan_Ly_Khu_Vuc_Mai_Van_Hung.pdf" target="_blank" class="btn-action btn-open" title="Mở file PDF trong tab mới">
+                <span>↗</span>
+                <span class="btn-label">Mở Toàn Màn Hình</span>
+            </a>
+            <a href="assets/Quan_Ly_Khu_Vuc_Mai_Van_Hung.pdf" download="Quan_Ly_Khu_Vuc_Mai_Van_Hung.pdf" class="btn-action btn-download" title="Tải file PDF gốc">
+                <span>⬇</span>
+                <span class="btn-label">Tải File PDF</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- FULLSCREEN PDF EMBED -->
+    <main class="pdf-container">
+        <iframe 
+            src="assets/Quan_Ly_Khu_Vuc_Mai_Van_Hung.pdf#toolbar=1&navpanes=0&scrollbar=1" 
+            title="Quản Lý Khu Vực - Mai Văn Hưng PDF" 
+            class="pdf-frame">
+            <p style="padding: 30px; text-align: center; color: #ffffff;">
+                Trình duyệt của bạn không hỗ trợ hiển thị PDF trực tiếp. 
+                <a href="assets/Quan_Ly_Khu_Vuc_Mai_Van_Hung.pdf" target="_blank" style="color: #38bdf8; text-decoration: underline;">
+                    Nhấn vào đây để tải và xem file PDF gốc.
+                </a>
+            </p>
+        </iframe>
+    </main>
+</body>
+</html>

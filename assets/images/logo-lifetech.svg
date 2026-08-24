@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <!-- Circular White Badge -->
+  <circle cx="120" cy="120" r="118" fill="#ffffff"/>
+  
+  <g transform="translate(20, 12)">
+    <!-- Black Chevron (L Shape / Left Triangle) -->
+    <path d="M 100 16 L 18 150 L 126 150 L 110 126 L 58 126 L 100 55 L 116 26 Z" fill="#24272c"/>
+    
+    <!-- Bright Blue Shape (T / Right Triangle) -->
+    <path d="M 125 32 L 182 150 L 152 150 L 124 92 L 86 92 L 98 70 L 140 70 L 125 32 Z" fill="#0ea5e9"/>
+    
+    <!-- "Life of Technology" Text -->
+    <text x="100" y="184" font-family="'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="21" font-weight="800" text-anchor="middle" fill="#1e2329" letter-spacing="-0.3px">Life of Technology</text>
+  </g>
+</svg>
