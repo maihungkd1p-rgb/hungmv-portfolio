@@ -12,16 +12,21 @@
 
 ---
 
-## 🎯 TÓM TẮT NĂNG LỰC
+## 🎯 TÓM TẮT NĂNG LỰC ĐIỀU HÀNH
 
-- **Vận hành Thực chiến:** Hơn 13 năm kinh nghiệm điều hành và tối ưu hóa chuỗi bán lẻ quy mô lớn đa ngành (Dược phẩm, Thời trang, Dịch vụ chuỗi, Công nghệ: *FPT Long Châu, 5S Fashion, 30Shine*). Năng lực quản lý mạng lưới **15+ showroom/cửa hàng**, dẫn dắt trực tiếp đội ngũ **50–100+ nhân sự** và chịu trách nhiệm doanh số khu vực từ **10 – 15 tỷ VNĐ/tháng**.
-- **Thành tựu & Chuẩn hóa Hệ thống:**
-  - **Top 1 KPI Miền Bắc:** Đạt danh hiệu Giám đốc Kinh doanh Khu vực Xuất sắc FPT Long Châu (T12/2022 & T01/2023).
-  - **Mở mới:** Trực tiếp setup hình ảnh, quầy kệ (Visual Merchandising) và đưa vào vận hành chuẩn hóa thành công **hơn 40+ điểm bán mới**.
-  - **Vận hành:** Thiết lập hệ thống checklist & SOP chuẩn, duy trì tỷ lệ tuân thủ thực địa **>90%**, nâng tỷ lệ khách hàng quay lại đạt **33%**.
-- **AI Workforce & Automated Retail Operations:**
-  - **Tự động hóa Báo cáo (Automated BI):** Xây dựng pipeline dữ liệu tự động, **cắt giảm 50–70% thời gian** tổng hợp số liệu thủ công, cung cấp báo cáo phân tích hiệu suất và nhận diện lỗi vận hành thực địa theo thời gian thực.
-  - **Số hóa Tri thức & Đào tạo:** Ứng dụng AI chuẩn hóa hệ thống quy trình SOP và tự động hóa kịch bản huấn luyện nhân sự, kịch bản CSKH đa kênh, giúp nâng cao hiệu suất bán hàng và tỷ lệ chuyển đổi.
+- **🏢 Vận Hành & Quy Mô Thực Chiến:**
+  - **13+ năm** điều hành chuỗi bán lẻ đa ngành (*FPT Long Châu, 5S Fashion, 30Shine*).
+  - Quản lý mạng lưới **15+ showroom/cửa hàng**, dẫn dắt trực tiếp đội ngũ **50–100+ nhân sự**.
+  - Chịu trách nhiệm doanh số khu vực **10 – 15 tỷ VNĐ/tháng**.
+
+- **🏆 Thành Tựu & Chuẩn Hóa Chuỗi:**
+  - **Top 1 KPI Miền Bắc:** Giám đốc Kinh doanh Khu vực Xuất sắc FPT Long Châu *(T12/2022 & T01/2023)*.
+  - **Mở mới 40+ điểm bán:** Trực tiếp setup hình ảnh, layout quầy kệ (VM) và đưa vào vận hành chuẩn hóa.
+  - **Kỷ luật vận hành:** Thiết lập SOP & Checklist, duy trì tỷ lệ tuân thủ thực địa **>90%**, nâng tỷ lệ giữ chân khách đạt **33%**.
+
+- **🤖 AI Workforce & Tự Động Hóa Vận Hành:**
+  - **Automated BI Pipeline:** Cắt giảm **50–70% thời gian** tổng hợp báo cáo và cảnh báo lỗi vận hành real-time.
+  - **Số hóa Tri thức & Đào tạo:** Ứng dụng AI chuẩn hóa hệ thống SOP, tự động hóa kịch bản huấn luyện nhân sự & CSKH đa kênh.
 
 ---
 
